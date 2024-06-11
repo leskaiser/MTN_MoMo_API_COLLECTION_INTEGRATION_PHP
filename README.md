@@ -110,7 +110,7 @@ Retrieve the status of a payment request.
 
 
 ## Example
-Here is an example of using the MomoAPI class in a PHP script:
+Here is an example of using the MomoAPI class in a PHP script :
 
 ```php
 <?php
