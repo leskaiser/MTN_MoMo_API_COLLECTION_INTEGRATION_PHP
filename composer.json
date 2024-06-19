@@ -1,0 +1,16 @@
+{
+    "name": "wanzoou/momoapicollection",
+    "description": "This repository provides a PHP class, MomoAPI, to facilitate integration with the MTN Mobile Money (MoMo) API for collection services. This class allows you to create API users, generate API keys, obtain access tokens, and make payment requests to the MTN MoMo platform.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wanzoou\\Momoapicollection\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*"
+    }
+}

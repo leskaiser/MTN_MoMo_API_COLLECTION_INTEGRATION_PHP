@@ -1,5 +1,7 @@
 <?php
 
+namespace MoMoAPICollection;
+
 class MomoAPI{
 
   private $apikey;
@@ -160,7 +162,7 @@ class MomoAPI{
       'Content-Type: application/json',
       'Ocp-Apim-Subscription-Key: ' . $this->primary_key
     );
-    
+
     $curl = curl_init();
     curl_setopt_array($curl, array(
       CURLOPT_URL => $url,
@@ -331,14 +333,54 @@ class MomoAPI{
       if (curl_errno($curl)) {
           $error_msg = curl_error($curl);
           echo "cURL Error: " . $error_msg;
-          die();
       }
       $httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
       curl_close($curl);
       if ($httpcode != '200'){
-          die();
+          return 0;
       }
       return json_decode($response);
   }
+
+  public function getCurrentBalance()
+  {
+      if ($this->access_token == null || $this->access_token == ''){
+        $this->createAccessToken();
+      }
+
+      $headers = array(
+          'Authorization: Bearer ' . $this->access_token,
+          'X-Target-Environment: ' . $this->targetEnvironment,
+          'Ocp-Apim-Subscription-Key: ' . $this->primary_key
+      );
+
+      $curl = curl_init();
+
+      $url = 'https://'. $this->momo_pay_host .'/collection/v1_0/account/balance';
+      curl_setopt_array($curl, array(
+          CURLOPT_URL => $url,
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'GET',
+          CURLOPT_HTTPHEADER => $headers
+      ));
+
+      $response = curl_exec($curl);
+      if (curl_errno($curl)) {
+          $error_msg = curl_error($curl);
+          echo "cURL Error: " . $error_msg;
+      }
+
+      $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+      curl_close($curl);
+
+      return json_decode($response);
+
+  }
+
 }
 
