@@ -19,32 +19,33 @@ This repository provides a PHP class, `MomoAPI`, to facilitate integration with 
 
 ## Installation
 
-Clone the repository to your local machine:
+You can install the library via Composer. Run the following command:
 
 ```bash
-git clone https://github.com/leskaiser/MTN_MoMo_API_COLLECTION_INTEGRATION_PHP.git
+composer require wanzoou/momoapicollection
 ```
 
-### Include the `MomoAPI` class in your project:
+Include the `MomoAPI` class in your project:
 
 ```php
-require_once 'path_to_repository/MomoAPI.php';
-```
+require_once 'vendor/autoload.php';
 
+use Wanzoou\Momoapicollection\MomoAPI;
+```
 
 ## Usage
 
 ### Initialization
 
 Instantiate the MomoAPI class:
+
 ```php
 $momo = new MomoAPI();
 ```
 
-
 ### Configuration
-Set the required parameters:
 
+Set the required parameters:
 
 ```php
 $momo->setMomoPayHost('sandbox.momodeveloper.mtn.com'); // Set MoMo API host
@@ -54,6 +55,7 @@ $momo->setTargetEnvironment('sandbox'); // Set the target environment (sandbox o
 ```
 
 ### Request to Pay
+
 Initiate a payment request:
 
 ```php
@@ -64,22 +66,20 @@ $currency = 'EUR'; // Currency
 $responseCode = $momo->requestToPay($phone, $amount, $currency);
 
 if ($responseCode == 202) {
-echo "Payment request initiated successfully.";
+    echo "Payment request initiated successfully.";
 } else {
-echo "Failed to initiate payment request.";
+    echo "Failed to initiate payment request.";
 }
 ```
 
 ### Check Transaction Status
-Retrieve the status of a payment request:
 
+Retrieve the status of a payment request:
 
 ```php
 $status = $momo->requestToPayTransactionStatus();
 echo "Transaction Status: " . json_encode($status);
 ```
-
-
 
 ## Methods
 
@@ -110,11 +110,14 @@ Retrieve the status of a payment request.
 
 
 ## Example
-Here is an example of using the MomoAPI class in a PHP script :
+
+Here is an example of using the MomoAPI class in a PHP script:
 
 ```php
 <?php
-require_once 'path_to_repository/MomoAPI.php';
+require_once 'vendor/autoload.php';
+
+use Wanzoou\Momoapicollection\MomoAPI;
 
 $momo = new MomoAPI();
 $momo->setMomoPayHost('sandbox.momodeveloper.mtn.com');
@@ -135,8 +138,9 @@ if ($responseCode == 202) {
 } else {
     echo "Failed to initiate payment request.\n";
 }
-
+?>
 ```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

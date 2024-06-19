@@ -1,0 +1,56 @@
+MIT License
+
+Copyright (c) 2024 Wanzoou
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+1. The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+2. The Software may be used for commercial and non-commercial purposes, provided
+that the following conditions are met:
+
+    a. The Software shall not be used to create derivative works that are
+    proprietary or closed source. If you modify the Software, you must release
+    your modifications under the same license as the original Software.
+
+    b. You may distribute the Software, provided that you include the original
+    copyright notice, this list of conditions, and the following disclaimer in
+    all copies or substantial portions of the Software.
+
+    c. You shall not use the name of the copyright holder or the names of
+    contributors to endorse or promote products derived from this Software
+    without specific prior written permission.
+
+3. If you distribute copies or substantial portions of the Software in a product,
+you must provide a copy of this license with the distribution and ensure that
+anyone receiving the product is aware of this license and its terms.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+4. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY
+SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA, OR PROFITS, WHETHER IN AN ACTION
+OF CONTRACT, NEGLIGENCE, OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+5. THE LICENSE DOES NOT GRANT PERMISSION TO USE THE TRADE NAMES, TRADEMARKS,
+SERVICE MARKS, OR PRODUCT NAMES OF THE COPYRIGHT HOLDER, EXCEPT AS REQUIRED FOR
+REASONABLE AND CUSTOMARY USE IN DESCRIBING THE ORIGIN OF THE SOFTWARE AND
+REPRODUCING THE CONTENT OF THE COPYRIGHT NOTICE AND DISCLAIMER.
+
+6. THE SOFTWARE IS PROVIDED WITH ALL FAULTS, AND THE ENTIRE RISK AS TO
+SATISFACTORY QUALITY, PERFORMANCE, ACCURACY, AND EFFORT IS WITH THE USER. SHOULD
+THE SOFTWARE PROVE DEFECTIVE, THE USER ASSUMES THE COST OF ALL NECESSARY
+SERVICING, REPAIR, OR CORRECTION.
